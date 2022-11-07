@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-//import HomeView from '../views/HomeView.vue'
+
 import Post from '@/components/Post'
 import Author from '@/components/Author'
 import PostsByTag from '@/components/PostsByTag'
