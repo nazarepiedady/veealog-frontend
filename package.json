@@ -10,6 +10,7 @@
   "dependencies": {
     "core-js": "^3.8.3",
     "vue": "^2.6.14",
+    "vue-apollo": "^3.0.0-beta.11",
     "vue-router": "^3.5.1"
   },
   "devDependencies": {
@@ -21,6 +22,8 @@
     "@vue/cli-service": "~5.0.0",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
+    "graphql-tag": "^2.9.0",
+    "vue-cli-plugin-apollo": "~0.22.2",
     "vue-template-compiler": "^2.6.14"
   },
   "eslintConfig": {
