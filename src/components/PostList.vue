@@ -58,3 +58,29 @@
 		}
 	}
 </script>
+
+<style>
+	.post-list {
+		list-style: none;
+	}
+
+	.post {
+		padding-bottom: 1rem;
+		border-bottom: 1px solid #ccc;
+	}
+
+	.post__title {
+		font-size: 1.25rem;
+	}
+
+	.post__description {
+		color: #777;
+		font-style: italic;
+	}
+
+	.post__tags {
+		list-style: none;
+		font-weight: bold;
+		font-size: 0.8125rem;
+	}
+</style>
