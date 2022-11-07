@@ -8,7 +8,7 @@
 					</router-link>
 				</span>
 				<span v-if="showAuthor">
-					by <AuthorLink :author="post.author">
+					by <AuthorLink :author="post.author" />
 				</span>
 				<div class="post__date">
 					{{ displayableDate(post.publishDate) }}
