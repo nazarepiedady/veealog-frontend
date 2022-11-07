@@ -53,7 +53,7 @@
 				return new Intl.DateTimeFormat(
 					'en-US',
 					{ dateStyle: 'full' },
-				).format(new Date(data))
+				).format(new Date(date))
 			}
 		}
 	}
