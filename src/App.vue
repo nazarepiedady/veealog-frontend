@@ -1,9 +1,8 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
+    <header>
+      <router-link to='/'><h1>Veealog</h1></router-link>
+    </header>
     <router-view/>
   </div>
 </template>
@@ -17,16 +16,16 @@
   color: #2c3e50;
 }
 
-nav {
+header {
   padding: 30px;
 }
 
-nav a {
+header a {
   font-weight: bold;
   color: #2c3e50;
 }
 
-nav a.router-link-exact-active {
+header a.router-link-exact-active {
   color: #42b983;
 }
 </style>
