@@ -8,24 +8,22 @@
 </template>
 
 <style>
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 1.5rem;
+}
+
+* + * {
+  margin-top: 1.5rem;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-header {
-  padding: 30px;
-}
-
-header a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-header a.router-link-exact-active {
-  color: #42b983;
+  margin: 0;
+  padding: 0;
 }
 </style>
