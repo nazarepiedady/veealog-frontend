@@ -12,7 +12,7 @@
 	import PostList from '@/components/PostList'
 
 	export default {
-		name: 'AuthorComponent',
+		name: 'Author',
 		components: {
 			PostList,
 		},
