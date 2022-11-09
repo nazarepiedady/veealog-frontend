@@ -14,35 +14,27 @@
 		components: {
 			PostList,
 		},
-		data() {
-			return {
-				allPosts: null,
-			}
-		},
-		async created() {
-			const posts = await this.$apollo.query({
-				query: gql`query {
-					allPosts {
-						title
-						subtitle
-						publishDate
-						published
-						metaDescription
-						slug
-						author {
-							user {
-								username
-								firstName
-								lastName
-							}
-						}
-						tags {
-							name
+		apollo: {
+			allPosts: gql`query {
+				allPosts {
+					title
+					subtitle
+					publishDate
+					published
+					metaDescription
+					slug
+					author {
+						user {
+							username
+							firstName
+							lastName
 						}
 					}
-				}`,
-			})
-			this.allPosts = posts.data.allPosts
+					tags {
+						name
+					}
+				}
+			}`,
 		},
 	}
 </script>
