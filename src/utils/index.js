@@ -1,6 +1,6 @@
-export function formatUserName(firstName, lastName, userName) {
+export function formatUserName({ firstName, lastName, username }) {
 	if (firstName && lastName) return `${firstName} ${lastName}`
-	return `${userName}`
+	return `${username}`
 }
 
 export function formatDateToBeReadable(date) {
