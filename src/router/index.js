@@ -4,7 +4,7 @@ import VueRouter from 'vue-router'
 import Post from '@/components/views/Post'
 import Posts from '@/components/views/Posts'
 import Author from '@/components/views/Author'
-import PostsByTag from '@/components/PostsByTag'
+import PostsByTag from '@/components/views/PostsByTag'
 
 Vue.use(VueRouter)
 
