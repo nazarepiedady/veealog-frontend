@@ -10,7 +10,7 @@
 
 <script>
 	import gql from 'graphql-tag'
-	import formatUserName from '@/utils'
+	import { formatUserName } from '@/utils'
 	import PostList from '@/components/PostList'
 
 	export default {
