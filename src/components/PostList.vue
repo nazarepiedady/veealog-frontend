@@ -27,8 +27,8 @@
 </template>
 
 <script>
-	import formatDateToBeReadable from '@/utils'
 	import AuthorLink from '@/components/AuthorLink'
+	import { formatDateToBeReadable } from '@/utils'
 
 	export default {
 		name: 'PostList',
