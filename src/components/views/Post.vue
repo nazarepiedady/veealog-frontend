@@ -18,6 +18,7 @@
 <script>
 	import gql from 'graphql-tag'
 	import AuthorLink from '@/components/AuthorLink'
+	import { formatDateToBeReadable } from '@/utils'
 
 	export default {
 		name: 'Post',
@@ -31,11 +32,7 @@
 		},
 		methods: {
 			displayableDate(date) {
-				return new Intl.DateTimeFormat(
-					'en-US',
-					{ dateStyle: 'full' },
-
-				).format(new Date(date))
+				return formatDateToBeReadable(date)
 			}
 		},
 		async created() {
