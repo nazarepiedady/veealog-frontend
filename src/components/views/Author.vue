@@ -10,6 +10,7 @@
 
 <script>
 	import gql from 'graphql-tag'
+	import formatUserName from '@/utils'
 	import PostList from '@/components/PostList'
 
 	export default {
@@ -24,11 +25,7 @@
 		},
 		computed: {
 			displayName() {
-				return (
-					this.author.user.firstName &&
-					this.author.user.lastName &&
-					`${this.author.user.firstName} ${this.author.user.lastName}`
-				) || `${this.author.user.username}`
+				return formatUserName(...this.author.user)
 			}
 		},
 		async created() {
