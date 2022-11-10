@@ -27,6 +27,7 @@
 </template>
 
 <script>
+	import formatDateToBeReadable from '@/utils'
 	import AuthorLink from '@/components/AuthorLink'
 
 	export default {
@@ -50,10 +51,7 @@
 		},
 		methods: {
 			displayableDate(date) {
-				return new Intl.DateTimeFormat(
-					'en-US',
-					{ dateStyle: 'full' },
-				).format(new Date(date))
+				return formatDateToBeReadable(date)
 			}
 		}
 	}
