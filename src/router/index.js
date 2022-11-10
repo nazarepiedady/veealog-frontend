@@ -2,8 +2,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 import Post from '@/components/views/Post'
-import Author from '@/components/Author'
 import Posts from '@/components/views/Posts'
+import Author from '@/components/views/Author'
 import PostsByTag from '@/components/PostsByTag'
 
 Vue.use(VueRouter)
