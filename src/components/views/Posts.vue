@@ -10,7 +10,7 @@
 	import PostList from '@/components/PostList'
 
 	export default {
-		name: 'AllPosts',
+		name: 'Posts',
 		components: {
 			PostList,
 		},
