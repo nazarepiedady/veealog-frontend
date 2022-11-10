@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import Post from '@/components/Post'
+import Post from '@/components/views/Post'
 import Author from '@/components/Author'
 import Posts from '@/components/views/Posts'
 import PostsByTag from '@/components/PostsByTag'
@@ -9,10 +9,10 @@ import PostsByTag from '@/components/PostsByTag'
 Vue.use(VueRouter)
 
 const routes = [
-  { path: '/author/:username', component: Author },
+  { path: '/', component: Posts },
   { path: '/post/:slug', component: Post },
   { path: '/tag/:tag', component: PostsByTag },
-  { path: '/', component: Posts },
+  { path: '/author/:username', component: Author },
 ]
 
 const router = new VueRouter({
