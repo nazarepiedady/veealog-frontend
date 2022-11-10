@@ -5,6 +5,8 @@
 </template>
 
 <script>
+	import { formatUserName } from '@/utils'
+
 	export default {
 		name: 'AuthorLink',
 		props: {
@@ -15,11 +17,7 @@
 		},
 		computed: {
 			displayName() {
-				return (
-					this.author.user.firstName &&
-					this.author.user.lastName &&
-					`${this.author.user.firstName} ${this.author.user.lastName}`
-				) || `${this.author.user.username}`
+				return formatUserName(...this.author.user)
 			}
 		}
 	}
